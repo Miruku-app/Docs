@@ -40,6 +40,10 @@
 * [Using RegEx](reference/regex.md)
 * [Animated Emotes](reference/animated\_emotes.md)
 
+## Custom Commands
+* [Overview](custom-commands/README.md)
+  * [AFK System](custom-commands/afk/afk.md)
+
 ## Others
 
 * [Acknowledgement](others/acknowledgement.md)
