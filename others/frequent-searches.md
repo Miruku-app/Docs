@@ -1,22 +1,22 @@
 # Frequent Searches
 
-## How do I invite YAGPDB to my server?
+## How do I invite Miruku to my server?
 
-Go to [yagpdb.xyz](https://yagpdb.xyz/), click on **Add to server** and follow the instructions on your screen. Afterwards, you can start managing it there by selecting the server from the dropdown in the top right corner.&#x20;
+Go to [Miruku](https://yagpdb.xyz/), click on **Add to server** and follow the instructions on your screen. Afterwards, you can start managing it there by selecting the server from the dropdown in the top right corner.&#x20;
 
-## Why isn't YAGPDB responding to anything?
+## Why isn't Miruku responding to anything?
 
 1. **Make sure you're using the right prefix** \
-   Type `@YAGPDB.xyz#8760 prefix`. If YAGPDB responds with a different prefix from what you are currently using, you are using the wrong prefix. You can change it on the [control panel](https://yagpdb.xyz/manage).\
+   Type `@Miruku#4995 prefix`. If Miruku responds with a different prefix from what you are currently using, you are using the wrong prefix. You can change it on the [control panel](https://yagpdb.xyz/manage).\
 
-2. **Check that YAGPDB has permissions** \
-   Check the channel settings to see if YAGPDB has read and write permissions for the channel. **Please double check this**, this is the most common reason why YAGPDB isn't responding. \
+2. **Check that Miruku has permissions** \
+   Check the channel settings to see if Miruku has read and write permissions for the channel. **Please double check this**, this is the most common reason why Miruku isn't responding. \
 
-3. &#x20;**Ensure YAGPDB is visibly online**\
-   Make sure that YAGPDB is online - [Discord might be having issues](https://status.discordapp.com/) or YAGPDB might be restarting (see [#downtime-announcements](https://discordapp.com/channels/166207328570441728/465887983657287686) in the Discord server).\
+3. &#x20;**Ensure Miruku is visibly online**\
+   Make sure that Miruku is online - [Discord might be having issues](https://status.discordapp.com/) or Miruku might be restarting (see [#downtime-announcements](https://discordapp.com/channels/166207328570441728/465887983657287686) in the Discord server).\
 
 4. **Check your command settings** \
-   If none of this works, make sure that all YAGPDB commands are enabled by visiting the [control panel](https://yagpdb.xyz/), logging in and selecting your server, clicking on **Core** and **Command Settings**. Make sure that **All commands enabled?** is checked and that there are no command overrides blocking the commands.
+   If none of this works, make sure that all Miruku commands are enabled by visiting the [control panel](https://yagpdb.xyz/), logging in and selecting your server, clicking on **Core** and **Command Settings**. Make sure that **All commands enabled?** is checked and that there are no command overrides blocking the commands.
 
 ![](../.gitbook/assets/unknown.png)
 
@@ -58,7 +58,7 @@ The bot can only assign roles that are below it in the role hierarchy, check tha
 
 ## How do I unban people?
 
-You can unban people through Discord. YAGPDB also has an `unban` command. You can also use `-ban <user> -d 1s`- it "bans" for 1 second and unbans, effectively unbanning a given user. Be careful with this, as latter is a "hack" / workaround and not our real `unban` command.
+You can unban people through Discord. Miruku also has an `unban` command. You can also use `-ban <user> -d 1s`- it "bans" for 1 second and unbans, effectively unbanning a given user. Be careful with this, as latter is a "hack" / workaround and not our real `unban` command.
 
 ## How do I enable developer mode?
 

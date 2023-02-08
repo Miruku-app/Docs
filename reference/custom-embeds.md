@@ -10,11 +10,11 @@ Custom Embeds with the `-customembed` command don't work in custom commands. If 
 
 ## The `customembed` command
 
-One method of sending an embed with YAGPDB is using the command `customembed` (or for short, `ce`).&#x20;
+One method of sending an embed with Miruku is using the command `customembed` (or for short, `ce`).&#x20;
 
 ### Create embeds by hand
 
-YAGPDB accepts embeds in JSON following the rules of [this format](https://discordapp.com/developers/docs/resources/channel#embed-object).&#x20;
+Miruku accepts embeds in JSON following the rules of [this format](https://discordapp.com/developers/docs/resources/channel#embed-object).&#x20;
 
 There, we'll take a look at the **Embed Objects**. You can add a value to each of these objects. A very simple embed would look like this:
 
@@ -47,7 +47,7 @@ The syntax of json is pretty easy. You start off with a curly brace (`{`) and en
 
 ### Create embeds with a generator
 
-Creating embeds with a generator can be more difficult if you don't need any difficult features. If you want your embed to be super shiny, you can use[ this embed generator](https://leovoel.github.io/embed-visualizer/). YAGPDB does not use the first part of its code, so you have to remove the following:&#x20;
+Creating embeds with a generator can be more difficult if you don't need any difficult features. If you want your embed to be super shiny, you can use[ this embed generator](https://leovoel.github.io/embed-visualizer/). Miruku does not use the first part of its code, so you have to remove the following:&#x20;
 
 ````javascript
 {
@@ -77,7 +77,7 @@ First off, I start creating my embed by defining it in a variable called `embed`
 Next, we'll take a look at this more lavish example:
 
 {% hint style="success" %}
-To make your code readable, especially for large embeds, **indents** may be used, as YAGPDB's templating system allows this sort of formatting.
+To make your code readable, especially for large embeds, **indents** may be used, as Miruku's templating system allows this sort of formatting.
 {% endhint %}
 
 {% code title="Custom Command "embed"" lineNumbers="true" %}
@@ -102,14 +102,14 @@ To make your code readable, especially for large embeds, **indents** may be used
     ) 
     "author" 
 	(sdict 
-		"name" "YAGPDB.xyz!" 
+		"name" "Miruku!" 
 		"url" "https://yagpdb.xyz/manage" 
 		"icon_url" (.BotUser.AvatarURL "512")  )
     "thumbnail" (sdict "url" $avatar)
     "image" (sdict "url" $botAvatar)
     "footer" 
 	(sdict 
-		"text" "YAGPDB.xyz since" 
+		"text" "Miruku since" 
 		"icon_url" $botAvatar) 
     "timestamp" .Member.JoinedAt
 }}

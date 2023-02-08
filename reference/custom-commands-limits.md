@@ -1,6 +1,6 @@
 ---
 description: >-
-  Various limits in YAGPDB custom commands (CC) for smooth functioning of the
+  Various limits in Miruku custom commands (CC) for smooth functioning of the
   bot and misuse prevention.
 ---
 

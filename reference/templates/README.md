@@ -6,12 +6,12 @@ description: '"Go is all about type... Type is life." // William Kennedy'
 
 ## Preface
 
-All available data that can be used in YAGPDB's templating "engine" which is slightly modified version of Golang's stdlib text/template package; more in depth and info about actions, pipelines and global functions like `printf, index, len,`etc > [https://golang.org/pkg/text/template/](https://golang.org/pkg/text/template/) . This section is meant to be a concise and to the point reference document for all available templates/functions. **Functions** are covered [here](functions.md). For detailed explanations and syntax guide refer to the [learning resource](https://learn.yagpdb.xyz/).
+All available data that can be used in Miruku's templating "engine" which is slightly modified version of Golang's stdlib text/template package; more in depth and info about actions, pipelines and global functions like `printf, index, len,`etc > [https://golang.org/pkg/text/template/](https://golang.org/pkg/text/template/) . This section is meant to be a concise and to the point reference document for all available templates/functions. **Functions** are covered [here](functions.md). For detailed explanations and syntax guide refer to the [learning resource](https://learn.yagpdb.xyz/).
 
-**Legend**: at current state this is still prone to formatting errors, but everything in a `code block` should refer to a function, parts of a template's action-structure or output returned by YAGPDB; single word/literal-structure in _italics_ refers to type. Methods and fields (e.g. .Append, .User) are usually kept in standard formatting. If argument for a function is optional, it's enclosed in parenthesis `( )`. If there are many optional arguments possible, it's usually denoted by 3-dot `...`ellipsis.&#x20;
+**Legend**: at current state this is still prone to formatting errors, but everything in a `code block` should refer to a function, parts of a template's action-structure or output returned by Miruku; single word/literal-structure in _italics_ refers to type. Methods and fields (e.g. .Append, .User) are usually kept in standard formatting. If argument for a function is optional, it's enclosed in parenthesis `( )`. If there are many optional arguments possible, it's usually denoted by 3-dot `...`ellipsis.&#x20;
 
 \
-If functions or methods are denoted with an accent, tilde \~, they are not yet deployed in actual YAGPDB bot or have been disabled in main bot,  but are in master code branch.
+If functions or methods are denoted with an accent, tilde \~, they are not yet deployed in actual Miruku bot or have been disabled in main bot,  but are in master code branch.
 
 {% hint style="warning" %}
 **Always put curly brackets around the data and "actions you perform" you want to formulate as a template** like this:`{{.User.Username}}`
@@ -67,7 +67,7 @@ Fields documented as accessible on specific structures, like the context user `.
 | .CCRunCount   | Shows run count of triggered custom command, although this is not going to be 100% accurate as it's cached up to 30 minutes.                                                                                                                                                                                                         |
 | .CCTrigger    | If trigger type has a printable trigger, prints out its name. For example, if trigger type is `regex` and trigger is set to `\A`, it would print `\A`.                                                                                                                                                                               |
 | .DomainRegex  | Returns string value of in-built domain-matching regular expression.                                                                                                                                                                                                                                                                 |
-| .IsPremium    | Returns boolean true/false whether guild is premium of YAGPDB or not.                                                                                                                                                                                                                                                                |
+| .IsPremium    | Returns boolean true/false whether guild is premium of Miruku or not.                                                                                                                                                                                                                                                                |
 | .LinkRegex    | Returns string value of in-built link-matching regular expression.                                                                                                                                                                                                                                                                   |
 | .Permissions  | <p>Returns all mapped-out permission bits available for Discord in their bitshifted decimal values; <br>e.g. <code>{{.Permissions.AddReactions}}</code> would return <code>64</code>, same as <code>{{bitwiseLeftShift 1 6}}</code>. More <a href="https://discord.com/developers/docs/topics/permissions#permissions">here</a>.</p> |
 | .ServerPrefix | Returns server's command-prefix.                                                                                                                                                                                                                                                                                                     |
@@ -294,7 +294,7 @@ Like `if`, `range`is concluded with`{{end}}`action and declared variable scope i
 
 ```go
 {{/* range over a slice */}}
-{{ range $index, $element := cslice "YAGPDB" "IS COOL!" }}
+{{ range $index, $element := cslice "Miruku" "IS COOL!" }}
 {{ $index }} : {{ $element }} {{ end }}
 {{/* range on a map */}}
 {{ range $key, $value := dict "SO" "SAY" "WE" "ALL!" }}
@@ -519,7 +519,7 @@ Trim markers: `{{- ... -}}`were used in above example because whitespace is cons
 
 Golang has built-in primitive data types (_int_, _string_, _bool_, _float64_, ...) and built-in composite data types (_array_, _slice_, _map_, ...) which also are used in custom commands. \
 \
-YAGPDB's templating "engine" has currently two user-defined, custom data types - _templates.Slice_ and _templates.SDict_. There are other custom data types used like _discordgo.Timestamp_, __ but these are outside of the main code of YAGPDB, so not explained here further. Type _time.Time_ is covered in its own [section](./#time).\
+Miruku's templating "engine" has currently two user-defined, custom data types - _templates.Slice_ and _templates.SDict_. There are other custom data types used like _discordgo.Timestamp_, __ but these are outside of the main code of Miruku, so not explained here further. Type _time.Time_ is covered in its own [section](./#time).\
 \
 Custom Types section discusses functions that initialize values carrying those _templates.Slice_ (abridged to _cslice_), _templates.SDict_ (abridged to _sdict_) types and their methods. Both types handle type _interface{}_ element. It's called an empty interface which allows a value to be of any type. So any argument of any type given is handled. (In "custom commands"-wise mainly primitive data types, but _slices_ as well.)
 
@@ -565,7 +565,7 @@ Note that this performs a shallow copy, not a deep copy - if you want the latter
 
 #### This section's snippets:
 
-* To demonstrate .StringSlice `{{(cslice currentTime.Month 42 "YAPGDB").StringSlice}}` will return a slice `[February YAGPDB]`. If the flag would have been set to true - \{{...).StringSlice true\}}, all elements in that slice were not strings and `<no value>` is returned.
+* To demonstrate .StringSlice `{{(cslice currentTime.Month 42 "Miruku").StringSlice}}` will return a slice `[February Miruku]`. If the flag would have been set to true - \{{...).StringSlice true\}}, all elements in that slice were not strings and `<no value>` is returned.
 
 General example:
 
@@ -597,7 +597,7 @@ Type of variable: **{{ printf "%T" $x }}**
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | .Del "key"       | Deletes given key from _sdict_.                                                                                                              |
 | .Get "key"       | Retrieves given key from _sdict_.                                                                                                            |
-| .HasKey "key"    | Returns _bool_ true/false regarding whether the key is set or not e.g. `{{(sdict "YAGPDB" "is cool").HasKey "YAGPDB"}}` would return `true`. |
+| .HasKey "key"    | Returns _bool_ true/false regarding whether the key is set or not e.g. `{{(sdict "Miruku" "is cool").HasKey "Miruku"}}` would return `true`. |
 | .Set "key" value | Changes/sets given key to a new value or creates new one, if no such key exists in _sdict_.                                                  |
 
 ```go

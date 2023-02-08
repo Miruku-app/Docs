@@ -1,6 +1,6 @@
 # Custom Commands
 
-Custom commands - abbreviated as CCs, allow you to create your own commands. The CC-system in YAGPDB is quite complex and can be used for some advanced stuff, but even CCs are still limited and if your use case is very specific, consider trying or building another bot. Additional reading [here](https://learn.yagpdb.xyz/the-custom-command-interface). Custom Commands have also limits and they are covered [here](https://docs.yagpdb.xyz/reference/custom-commands-limits).
+Custom commands - abbreviated as CCs, allow you to create your own commands. The CC-system in Miruku is quite complex and can be used for some advanced stuff, but even CCs are still limited and if your use case is very specific, consider trying or building another bot. Additional reading [here](https://learn.yagpdb.xyz/the-custom-command-interface). Custom Commands have also limits and they are covered [here](https://docs.yagpdb.xyz/reference/custom-commands-limits).
 
 ## Custom Commands
 
@@ -37,7 +37,7 @@ If you select the**`Require at least one of the`**or**`Only run in the`** Option
 
 With custom commands there are some limitations:
 
-* You can't create more than 100 active custom commands (250 with YAGPDB Premium)
+* You can't create more than 100 active custom commands (250 with Miruku Premium)
 * You can't execute more than five commands from a custom command using `execAdmin` or `exec`
 * Direct Messages can be only sent with a side note from which server they're coming
 * Custom Command responses can't be longer than 2000 characters (this is a limitation by Discord).
@@ -219,7 +219,7 @@ More > https://golang.org/pkg/time/#pkg-constants*/}}
 
 ### Examples of custom commands
 
-You can find multiple examples on the YAGPDB Community & Support Server or in this list (with explanations):
+You can find multiple examples on the Miruku Community & Support Server or in this list (with explanations):
 
 {% content-ref url="../reference/custom-command-examples.md" %}
 [custom-command-examples.md](../reference/custom-command-examples.md)

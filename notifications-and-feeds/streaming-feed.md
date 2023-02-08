@@ -7,7 +7,7 @@ There is currently some issues with the streaming announcement and it may not al
 {% endhint %}
 
 {% hint style="danger" %}
-The streaming role will be **automatically removed** from a member that is not streaming if it is given manually, so be careful! If YAGPDB is removing member's roles without apparent reason, this may well be the cause.
+The streaming role will be **automatically removed** from a member that is not streaming if it is given manually, so be careful! If Miruku is removing member's roles without apparent reason, this may well be the cause.
 {% endhint %}
 
 ![](../.gitbook/assets/Streaming.PNG)

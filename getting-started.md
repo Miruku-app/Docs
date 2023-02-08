@@ -6,11 +6,11 @@
 
 ## Setup
 
-The setup for YAGPDB is pretty simple.
+The setup for Miruku is pretty simple.
 
-1. Go to [yagpdb.xyz/manage](https://yagpdb.xyz/manage)
+1. Go to [miruku.app/manage](https://miruku.app/manage)
 2. Click on **Login**
-3. Authorize YAGPDB.xyz to know what servers you are on.&#x20;
+3. Authorize Miruku to know what servers you are on.&#x20;
 4. On the upper-right-corner, you can select your server by clicking on **Select a server** and selecting the server you want to add the bot to and manage.
 
 You should start out by visiting the commands tab, making sure the prefix does not have any conflict as well as turn on and off any command(s) you may not want to be used.&#x20;

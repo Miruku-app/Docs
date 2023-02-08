@@ -5,12 +5,12 @@ Note: This page is no longer updated with the latest versions of codes/commands.
 {% endhint %}
 
 {% hint style="warning" %}
-This isn't the actual page about custom commands. A brief overview about custom commands can be found [here](https://docs.yagpdb.xyz/custom-commands). Please take notice, some of examples presented here are not up to date with current capabilities of YAGPDB. Please visit our [support server](https://discord.gg/0vYlUK2XBKldPSMY) for newer solutions.
+This isn't the actual page about custom commands. A brief overview about custom commands can be found [here](https://docs.yagpdb.xyz/custom-commands). Please take notice, some of examples presented here are not up to date with current capabilities of Miruku. Please visit our [support server](https://discord.gg/nP3Xu77r3b) for newer solutions.
 {% endhint %}
 
 ### Controlled randomizer example
 
-YAGPDB has a built-in random response system for custom commands, but sometimes you may want to control the chances for certain responses to occur. You can do this by creating a singular response and creating a variable with randInt. Then use an if else if statement like this to print out your desired output.&#x20;
+Miruku has a built-in random response system for custom commands, but sometimes you may want to control the chances for certain responses to occur. You can do this by creating a singular response and creating a variable with randInt. Then use an if else if statement like this to print out your desired output.&#x20;
 
 ```go
 {{$var := randInt 100}}
@@ -50,7 +50,7 @@ Trigger type: `Command` Trigger: `range`
 
 ```go
 {{/* range can iterate over many things, let's start with slice */}}
-{{ $slice := cslice "YAGPDB " "is " "cool!" }}
+{{ $slice := cslice "Miruku " "is " "cool!" }}
 {{/* Here, we range over with 1 argument, meaning the dot will be set to current iteration value */}}
 {{ range $slice -}}
     {{ . }} 
@@ -77,7 +77,7 @@ Note that we can go through everything that is in $lb with range.
 
 ### Dictionary example
 
-A dictionary does not currently have a lot of practical use, because YAGPDB has a data type more suited for most use cases - `sdict`. However, sdict only supports string keys, which means that in the case you want non-string keys, you will have to use `dict`.
+A dictionary does not currently have a lot of practical use, because Miruku has a data type more suited for most use cases - `sdict`. However, sdict only supports string keys, which means that in the case you want non-string keys, you will have to use `dict`.
 
 Trigger type: `Command` Trigger: `dict`
 
@@ -197,7 +197,7 @@ You don't have any notes :(
 
 ### Cooldown Example&#x20;
 
-With YAGPDB's database system, you can now add cooldowns to you custom commands. You can either make them global cooldowns or a per user cooldown.
+With Miruku's database system, you can now add cooldowns to you custom commands. You can either make them global cooldowns or a per user cooldown.
 
 ```go
 {{/* CONFIGURATION HERE CHANGE VALUES AS NEEDED */}}
@@ -235,7 +235,7 @@ With YAGPDB's database system, you can now add cooldowns to you custom commands.
 
 > By **Timcampy#5636**
 
-With YAGPDB's database system, I made a command to have users count from 0 and keep counting to the next number. Relatively simple command that involves database and type conversion.&#x20;
+With Miruku's database system, I made a command to have users count from 0 and keep counting to the next number. Relatively simple command that involves database and type conversion.&#x20;
 
 Trigger type: `Regex` Trigger: `\A`
 
@@ -446,7 +446,7 @@ Correct usage: `-suggest <suggestion>`
 > By: **CHamburr#2591**\
 > ****Updated by: **Joe\_#2447**
 
-This command uses the `reFindAllSubmatches` template as well as the `printf` template, and will enlarge custom emotes, whether still or animated. This will also work for emotes that are from the servers YAGPDB is not in, as it gets the emote file directly from Discord's database.
+This command uses the `reFindAllSubmatches` template as well as the `printf` template, and will enlarge custom emotes, whether still or animated. This will also work for emotes that are from the servers Miruku is not in, as it gets the emote file directly from Discord's database.
 
 Trigger type: `Command` Trigger: `bigemote`
 

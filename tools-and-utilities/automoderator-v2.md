@@ -356,7 +356,7 @@ Effects with ability to add custom messages are capped to 150 characters.
 There are some limitations you need to be aware of when using Automoderator V2, which are listed below.
 
 {% hint style="info" %}
-**Note:** 'Normal' here means a normal server without YAGPDB Premium, 'Premium' means one with YAGPDB Premium.
+**Note:** 'Normal' here means a normal server without Miruku Premium, 'Premium' means one with Miruku Premium.
 {% endhint %}
 
 * **Max message-based triggers:** 20 for normal, 100 for premium.

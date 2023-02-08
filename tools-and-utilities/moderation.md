@@ -2,7 +2,7 @@
 
 ![](../.gitbook/assets/Moderation.PNG)
 
-The moderation features YAGPDB provides are:
+The moderation features Miruku provides are:
 
 * **Mod log** that logs all moderation actions
 * Generation of a **message log** for all mod action

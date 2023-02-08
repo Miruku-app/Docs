@@ -25,7 +25,7 @@ _We will be talking about all these rules and their options in-depth further in 
 4. **Links**\
    ****This rule allows you to delete messages with links.
 5. **Banned words/websites**\
-   ****YAGPDB comes with a built-in list of bad words and sites which can be used, or you can configure your own!
+   ****Miruku comes with a built-in list of bad words and sites which can be used, or you can configure your own!
 
 ## Options available across all rules
 
@@ -78,7 +78,7 @@ As we can see, the two options are **Number of messages** and **Within (seconds)
 As we can see, there is only one option for this rule if we take out ignored roles / channels and violations. This is **Mention threshold -** which is how many mentions a user would need to mention _in a single message_ for this ruleset to be triggered.&#x20;
 
 {% hint style="danger" %}
-This ruleset will not trigger if you mention the _same_ person, only if you mention different people. For example, if we had the threshold as `2` and we mentioned `Jonas747` twice, it would not trigger. However, if we mentioned `Jonas747` _and_  `YAGPDB`, it would trigger.
+This ruleset will not trigger if you mention the _same_ person, only if you mention different people. For example, if we had the threshold as `2` and we mentioned `Tony` twice, it would not trigger. However, if we mentioned `Tony` _and_  `Miruku`, it would trigger.
 {% endhint %}
 
 ### Server invites
@@ -91,13 +91,13 @@ This ruleset will not trigger if you send an invite for the current server you s
 
 ### Links
 
-Another self-explanatory rule! All you need to do is set it up, and YAGPDB will remove any links sent.
+Another self-explanatory rule! All you need to do is set it up, and Miruku will remove any links sent.
 
 ### Banned words
 
 ![Unique options for Banned words](<../.gitbook/assets/image (13).png>)
 
-There are two options that you can set for this rule - `Ban built-in swear words` and `Banned words`. The former is a yes/no checkbox. If it is enabled, YAGPDB will use its built-in swear word list (available [here](https://github.com/jonas747/yagpdb/blob/master/automod\_legacy/swearwords.go)) in addition to the ones provided.
+There are two options that you can set for this rule - `Ban built-in swear words` and `Banned words`. The former is a yes/no checkbox. If it is enabled, Miruku will use its built-in swear word list (available [here](https://github.com/jonas747/yagpdb/blob/master/automod\_legacy/swearwords.go)) in addition to the ones provided.
 
 The **Banned words** option is a simple list of all the words you wish to ban. They should be separated by either spaces or newlines: i.e `hello,world` would ban both hello and world, while `hello`\
 `world` would do the same.&#x20;
